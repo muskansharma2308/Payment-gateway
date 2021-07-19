@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -113,8 +114,21 @@ body {
   .figure__img {
     display: none;
   }
+  .contact__col1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 60% !important;
+    -webkit-box-flex: 1 !important;
+        -ms-flex: auto !important;
+            flex: auto !important;
+  }
+  .contact__col1 > * {
+    width: auto !important;
+  }
   .contact__col2 {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -363,8 +377,8 @@ body {
 }
 
 .list {
-  list-style: inside;
-  font-size: 2rem;
+  list-style: square;
+  font-size: 1.5rem;
   font-weight: 300;
   padding: 2rem 0;
 }
@@ -395,6 +409,7 @@ body {
   height: 100%;
   max-width: 112rem;
   margin: 0 auto;
+  width: 100%;
 }
 
 .contact__col1 {
