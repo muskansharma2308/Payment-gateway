@@ -113,6 +113,9 @@ body {
   .figure__img {
     display: none;
   }
+  .contact__col2 {
+    display: none;
+  }
 }
 
 body {
