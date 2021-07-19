@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Payment Gateway Integration</title>
+    <meta name="theme-color" content="#e2496d">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <!-- This is the branding of the navbar -->
+            <div class="nav__branding">
+                <i class="ri-twitch-fill nav__branding-logo"></i>
+                <h1 class="nav__branding-title"><a href="#" class="nav__link nav__link-brand">
+                        Payment Gateway
+                    </a></h1>
+            </div>
+            <!-- This is the menu that'll be shown once the navbar is toggled -->
+            <div class="nav__menu" id="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <i class="ri-close-circle-line nav__close" id="nav__close"></i>
+            </div>
+
+            <!-- This is the hamburger menu button -->
+            <div class="nav__toggle" id="nav__toggle">
+                <i class="ri-menu-3-fill"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero__col1">
+            <h1 class="h1">A <span class="text--primary">small </span> donation can make a <span
+                    class="text--primary">big</span> difference!</h1>
+            <p class="subhead">The spark foundation task #3</p>
+            <p class="description">This website was created as a task mentioned in the TSF Grip documentation by Muskan Sharma.</p>
+            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Hanl5qhArJpTES" async> </script> </form>
+        </div>
+        <div class="hero__col2">
+            <figure class="figure">
+                <img src="images/main-art.png" alt="Donation Artwork" class="bio-img">
+            </figure>
+        </div>
+    </main>
+
+    <section id="about" class="about section">
+        <h1 class="h1">About the project</h1>
+        <p class="subhead">Here are the things I learnt while creating this project</p>
+        <ul class="list">
+            <li class="list__item">Frontend development</li>
+            <li class="list__item">Integrating the Payment Gateway</li>
+            <li class="list__item">Hosting the site on Github Pages</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact section">
+        <div class="contact__container">
+            <div class="contact__col1">
+                <h1 class="h1">Hello, I'm Muskan Sharma</h1>
+                <p class="subhead">I make awesome stuff for the web</p>
+                <p class="description--opaque">
+                    Reach me on social media <br/>
+                    <ul class="list">
+                        <li class="list__item">
+                            <i class="ri-mail-line list__icon"></i>
+                            Email : muskansharma0875work@gmail.com
+                        </li>
+                        <li class="list__item">
+                            <i class="ri-instagram-line list__icon"></i>
+                            Instagram : @muskansharma2308
+                        </li>
+                        <li class="list__item">
+                            <i class="ri-linkedin-box-fill list__icon"></i>
+                            LinkedIn : @muskansharma0875
+    
+                        </li>
+                    </ul>
+    
+                </p>
+            </div>
+            <div class="contact__col2">
+                <img src="images/muskan.jpg" class="bio-img bio-img--art" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+<!-- 
+
+    To do:
+    1. Create the about and contact pages
+    5. Record the video and send
+
+ -->
